@@ -63,6 +63,7 @@ class FruitSalad():
         random.shuffle(self.fruits)
     def __str__(self):
         return f"Fruit Salad with {self.top.name} topping: {self.fruits}"
+        
 
 fruit_salad = FruitSalad(list_of_fruits)
 fruit_salad.choose_topping()
