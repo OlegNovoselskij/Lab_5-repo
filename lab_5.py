@@ -5,7 +5,7 @@ import random
 
 class Topping(Enum):
     """
-    dada
+    class which contains top of teste
     """
     SWEET = 1
     SOUR = 3
@@ -13,7 +13,7 @@ class Topping(Enum):
 
 class Fruit(list):
     """
-    class for making ekzemplars
+    class for making ekzemplars of fruits
     """
     SWEET = 0
     SOUR = 0
@@ -28,14 +28,14 @@ avocado = Fruit(['avocado', 'small', 'green', 'NEUTRAL'])
 list_of_fruits = [apple, banana, kiwi, grapefruit, avocado]
 class FruitSalad():
     """
-    abc
+    class for choosing topping and for mixing salad
     """
     def __init__(self, fruits):
         self.fruits = fruits
         self.top = None
     def choose_topping(self):
         """
-        baobab
+        chooose best topping for fruits
         """
         sweet_count = 0
         sour_count = 0
@@ -56,7 +56,7 @@ class FruitSalad():
 
     def mix_ingredients(self):
         """
-        caljna
+        mix fruits in list and delete a random fruit
         """
         num_of_deleted_fruit = random.randint(0, len(self.fruits))
         self.fruits.pop(num_of_deleted_fruit - 1)
